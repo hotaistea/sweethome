@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Home - Агентство недвижимости</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1 data-key="title">Sweet Home</h1>
+        <nav>
+            <a href="#services" data-key="nav-services">Услуги</a>
+            <a href="#advantages" data-key="nav-advantages">Преимущества</a>
+            <a href="#about" data-key="nav-about">О нас</a>
+            <a href="#contact" data-key="nav-contact">Контакты</a>
+        </nav>
+    
+        <!-- Переключатель языка -->
+        <select id="language-switcher">
+            <option value="ru">Рус</option>
+            <option value="en">Eng</option>
+            <option value="kz">Қаз</option>
+        </select>
+    </header>
+    
+    <section class="hero">
+        <h2 data-key="hero-title">Найти дом своей мечты</h2>
+        <p data-key="hero-text">Мы поможем вам подобрать идеальное жилье для вашего комфорта.</p>
+    </section>
+    
+    <section class="form-container">
+        <h3 data-key="form-title">Оставьте заявку</h3>
+        <input type="text" placeholder="Ваше имя" data-key="input-name">
+        <input type="text" placeholder="Ваш телефон" data-key="input-phone">
+        <select data-key="input-type">
+            <option data-key="option-default">Тип заявки</option>
+            <option data-key="option-buy">Покупка</option>
+            <option data-key="option-sell">Продажа</option>
+            <option data-key="option-rent">Аренда</option>
+        </select>
+        <button data-key="btn-submit">Отправить</button>
+    </section>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <h3 data-key="about_us">О нас</h3>
+            <p data-key="about_text">
+                Sweet Home - это агентство недвижимости с многолетним опытом и глубокими знаниями рынка недвижимости. Мы предлагаем профессиональную помощь на каждом этапе — от подбора идеального жилья до заключения сделки. Наша команда состоит из квалифицированных специалистов, которые заботятся о каждом клиенте и делают всё возможное, чтобы ваше сотрудничество с нами было комфортным, прозрачным и успешным. Мы понимаем, насколько важен вопрос жилья, и стремимся найти лучшие решения, которые будут соответствовать вашим потребностям и бюджету. Доверие клиентов — наш главный приоритет, поэтому мы гарантируем безопасность, юридическую чистоту и оперативность всех операций.
+            </p>
+        </div>
+    </section>
+    
+    <section class="numbers">
+        <h2 data-key="numbers_title">Мы в цифрах</h2>
+        <div class="numbers-container">
+            <div class="number-item">
+                <div class="num-item"><span class="num" data-target="15">0</span><p>+</p></div>
+                <p data-key="years_success">лет успешной работы</p>
+            </div>
+            <div class="number-item">
+                <div class="num-item"><span class="num" data-target="3000">0</span><p>+</p></div>
+                <p data-key="objects_in_base">объектов в базе</p>
+            </div>
+            <div class="number-item">
+                <div class="num-item"><span class="num" data-target="2">0</span></div>
+                <p data-key="avg_sale_time">месяца – средний срок продажи</p>
+            </div>
+            <div class="number-item">
+                <div class="num-item"><span class="num" data-target="1000">0</span><p>+</p></div>
+                <p data-key="happy_clients">довольных клиентов</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services" class="section">
+        <div class="container">
+            <h3 data-key="services_title">Наши Услуги</h3>
+            <div class="services">
+                <div class="service">
+                    <img src="./img/pokupka.jpg" alt="Покупка">
+                    <h4 data-key="service_buy">Покупка</h4>
+                    <p data-key="service_buy_text">Подбор недвижимости по вашим критериям и помощь в заключении сделки.</p>
+                    <a href="https://wa.me/77017657653"><button data-key="more_details">Подробнее</button></a>
+                </div>
+                <div class="service">
+                    <img src="./img/prodazha.jpg" alt="Продажа">
+                    <h4 data-key="service_sell">Продажа</h4>
+                    <p data-key="service_sell_text">Организация продажи с максимальной выгодой для вас.</p>
+                    <a href="https://wa.me/77017657653"><button data-key="more_details">Подробнее</button></a>
+                </div>
+                <div class="service">
+                    <img src="./img/arenda.jpg" alt="Аренда">
+                    <h4 data-key="service_rent">Аренда</h4>
+                    <p data-key="service_rent_text">Надежные варианты аренды для комфортного проживания.</p>
+                    <a href="https://wa.me/77017657653"><button data-key="more_details">Подробнее</button></a>
+                </div>
+                <div class="service">
+                    <img src="./img/komercheskoe.jpg" alt="Коммерческая недвижимость">
+                    <h4 data-key="service_commercial">Коммерческая недвижимость</h4>
+                    <p data-key="service_commercial_text">Подбор, продажа и аренда коммерческих объектов для бизнеса.</p>
+                    <a href="https://wa.me/77017657653"><button data-key="more_details">Подробнее</button></a>
+                </div>
+                <div class="service">
+                    <img src="./img/zarubezh.jpg" alt="Международная недвижимость">
+                    <h4 data-key="service_international">Международная недвижимость</h4>
+                    <p data-key="service_international_text">Помогаем приобрести недвижимость за границей: Турция, Кипр, Болгария, Дубай, Таиланд.</p>
+                    <a href="https://wa.me/77017657653"><button data-key="more_details">Подробнее</button></a>
+                </div>
+                <div class="service">
+                    <img src="./img/zakon.jpg" alt="Узаконивание">
+                    <h4 data-key="service_legalization">Узаконивание перепланировок и ввод в эксплуатацию</h4>
+                    <p data-key="service_legalization_text">Помогаем узаконить любые перепланировки и ввести объект в эксплуатацию.</p>
+                    <a href="https://wa.me/77017657653"><button data-key="more_details">Подробнее</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="partners">
+        <div class="container">
+            <h2 data-key="partners_title">Наши партнеры</h2>
+            <div class="partners-container">
+                <div class="partner-item">
+                    <img src="./img/krysha.png" alt="Крыша.кз">
+                </div>
+                <div class="partner-item">
+                    <img src="./img/bi.png" alt="BI Group">
+                </div>
+                <div class="partner-item">
+                    <img src="./img/rams.png" alt="RAMS">
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section class="advantages">
+        <div class="container">
+            <h2 data-key="advantages_title">Наши преимущества</h2>
+            <div class="advantages-container">
+                <div class="advantage-item">
+                    <img src="./img/icons8-файл-контракт-48.png" alt="">
+                    <h3 data-key="advantage_contract">Онлайн-договор</h3>
+                    <p data-key="advantage_contract_text">Заключение сделки без необходимости личной встречи.</p>
+                </div>
+                <div class="advantage-item">
+                    <img src="./img/icons8-реклама-48.png" alt="">
+                    <h3 data-key="advantage_advertising">Активная реклама</h3>
+                    <p data-key="advantage_advertising_text">Продвижение вашей недвижимости на популярных платформах.</p>
+                </div>
+                <div class="advantage-item">
+                    <img src="./img/icons8-быстро-48.png" alt="">
+                    <h3 data-key="advantage_fast_sale">Быстрая продажа</h3>
+                    <p data-key="advantage_fast_sale_text">Средний срок продажи – от 1 до 2 месяцев.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="reviews">
+        <div class="container">
+            <h2 data-key="reviews_title">Отзывы наших клиентов</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-name" data-key="review_1_name">Динара Капизова</div>
+                        <div class="review-date" data-key="review_1_date">12 марта 2025</div>
+                        <p class="review-text" data-key="review_1_text">Хочу поблагодарить Наталью за помощь в продаже квартиры в короткие сроки. Наталья - профессионал с большой буквы. Удачи и процветания вашей команде профессионалов!</p>
+                        <div class="stars" data-key="review_1_rating">★★★★★</div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="review-name" data-key="review_2_name">Nizam Sadyrov</div>
+                        <div class="review-date" data-key="review_2_date">5 февраля 2025</div>
+                        <p class="review-text" data-key="review_2_text">Огромная благодарность Гусельниковой Юлии! Спасибо за внимательное отношение и помощь в поиске съёмного жилья!</p>
+                        <div class="stars" data-key="review_2_rating">★★★★★</div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="review-name" data-key="review_3_name">Константин Банченко</div>
+                        <div class="review-date" data-key="review_3_date">20 января 2025</div>
+                        <p class="review-text" data-key="review_3_text">Огромное спасибо Юле! Профессионал своего дела. От первого звонка до полного сопровождения сделки. Остались очень довольны!</p>
+                        <div class="stars" data-key="review_3_rating">★★★★★</div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="review-name" data-key="review_4_name">Гульназ Салимова</div>
+                        <div class="review-date" data-key="review_4_date">28 марта 2025</div>
+                        <p class="review-text" data-key="review_4_text">Спасибо Sweet Home за профессионализм. Нашли идеальную квартиру по отличной цене. Поняли наши пожелания с первого раза.</p>
+                        <div class="stars" data-key="review_4_rating">★★★★★</div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="review-name" data-key="review_5_name">Ольга Мендыбаева</div>
+                        <div class="review-date" data-key="review_5_date">8 апреля 2025</div>
+                        <p class="review-text" data-key="review_5_text">Благодарю компанию Sweet Home и риэлтора Наталью! Всё оперативно, быстро и с вниманием к деталям. Сделали скидку, спасибо!</p>
+                        <div class="stars" data-key="review_5_rating">★★★★★</div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="review-name" data-key="review_6_name">Рустам Ахметов</div>
+                        <div class="review-date" data-key="review_6_date">15 февраля 2025</div>
+                        <p class="review-text" data-key="review_6_text">Отличная работа Sweet Home! Процесс покупки квартиры прошел без нервов. Риэлторы всегда были на связи, спасибо!</p>
+                        <div class="stars" data-key="review_6_rating">★★★★★</div>
+                    </div>
+                </div>
+    
+                <!-- Навигация -->
+                <div class="swiper-pagination" data-key="reviews_pagination"></div>
+                <div class="swiper-button-prev" data-key="reviews_prev"></div>
+                <div class="swiper-button-next" data-key="reviews_next"></div>
+            </div>
+        </div>
+    </section>    
+    
+    <section class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <img src="./img/agent.png" alt="Крыша Агент">
+                <div class="banner-text">
+                    <h2 data-key="banner_title">ИМЕЕМ СТАТУС "КРЫША АГЕНТ"</h2>
+                    <p data-key="banner_text">Все наши объекты всегда на первых местах на портале KRISHA.KZ!</p>
+                    <a href="https://wa.me/77017657653" class="btn" data-key="banner_button">СВЯЗАТЬСЯ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2 data-key="contact_title">Наши контакты</h2>
+                    <p data-key="contact_address">📍 Казахстан, г. Алматы, Проспект Абая, 76/109</p>
+                    <a href="tel:+77272223545"><p data-key="contact_phone_1">📞 <strong>+7 (727) 222 35 45</strong></p></a>
+                    <a href="tel:+77078328807"><p data-key="contact_phone_2">📞 <strong>+7 (707) 832 88 07</strong></p></a>
+                    <a href="tel:+77017657653"><p data-key="contact_phone_3">📞 <strong>+7 (701) 765 76 53</strong></p></a>
+                    <p>✉️ <a href="mailto:Sweethome.kz@mail.ru" data-key="contact_email">Sweethome.kz@mail.ru</a></p>
+                    <div class="social-links">
+                        <a href="https://wa.me/77017657653"><img src="./img/icons8-whatsapp-48 (1).png" alt="WhatsApp"></a>
+                        <a href="https://www.instagram.com/sweethome_agenstvonedvijimosti"><img src="./img/icons8-instagram-48 (1).png" alt="Instagram"></a>
+                    </div>
+                </div>
+    
+                <div class="contact-form">
+                    <h2 data-key="contact_form_title">Оставьте заявку</h2>
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Ваше имя" required data-key="form_name_placeholder">
+                        <input type="tel" name="phone" placeholder="Ваш телефон" required data-key="form_phone_placeholder">
+                        <select data-key="form_select">
+                            <option data-key="form_select_option">Тип заявки</option>
+                            <option data-key="form_option_buy">Покупка</option>
+                            <option data-key="form_option_sell">Продажа</option>
+                            <option data-key="form_option_rent">Аренда</option>
+                        </select>
+                        <button type="submit" data-key="form_submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe id="map_966927540" frameborder="0" width="100%" height="300px" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe><script type="text/javascript">(function(e,t){var r=document.getElementById(e);r.contentWindow.document.open(),r.contentWindow.document.write(atob(t)),r.contentWindow.document.close()})("map_966927540", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiI2YyMDIwMiIsInRpdGxlIjoiIiwiZGVzY3JpcHRpb24iOiIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6Wzc2LjkwMzU3Nyw0My4yMzg4MDFdfSwiaWQiOjc3MX1dLCJtYXBQb3NpdGlvbiI6eyJsYXQiOjQzLjIzOTM4Nzk0NDUxNzM0LCJsb24iOjc2LjkwMzg2NzU3MTExOTgsInpvb20iOjE0fSwiaXNXaGVlbFpvb21FbmFibGVkIjpmYWxzZX0nKTwvc2NyaXB0PjxzY3JpcHQgYXN5bmM9IiIgc3JjPSJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbS9ndGFnL2pzP2lkPUctVDg2S01EMDNDNyI+PC9zY3JpcHQ+PHNjcmlwdCBpZD0iZ29vZ2xlLWFuYWx5dGljcyI+CiAgICAgIHdpbmRvdy5kYXRhTGF5ZXIgPSB3aW5kb3cuZGF0YUxheWVyIHx8IFtdOwogICAgICBmdW5jdGlvbiBndGFnKCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKTt9CiAgICAgIGd0YWcoJ2pzJywgbmV3IERhdGUoKSk7CiAgICAgIGd0YWcoJ2NvbmZpZycsICdHLVQ4NktNRDAzQzcnLCB7ImNvb2tpZV9mbGFncyI6IlNhbWVTaXRlPU5vbmU7IFNlY3VyZTsgUGFydGl0aW9uZWQiLCJjb29raWVfdXBkYXRlIjpmYWxzZX0pOwogICAgICB0cnVlICYmIGd0YWcoJ2V2ZW50JywgJ2Zyb21faWZyYW1lJyk7CiAgICA8L3NjcmlwdD48L2JvZHk+")</script>
+
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <p data-key="footer_contact">Свяжитесь с нами: Телефон: +7 708 864 83 93 | <a href="#" data-key="footer_whatsapp">Написать в WhatsApp</a></p>
+        <p data-key="footer_copyright">© 2024 Sweet Home | Агентство недвижимости</p>
+        <a href="#" data-key="footer_privacy">Политика конфиденциальности</a>
+    </footer>
+    
+
+    <script src="./numbers.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
+</body>
+</html>

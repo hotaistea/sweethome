@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #5e239d;
+    color: #fff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 2em;
+}
+header nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero {
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(94,16,125,0.5)), url('./img/main.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 180px 10%;
+    text-align: center;
+}
+.hero h2 {
+    font-size: 3em;
+}
+.hero p {
+    font-size: 22px;
+}
+.form-container {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 500px;
+    margin: -100px auto 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.form-container h3 {
+    color: #5e239d;
+}
+.form-container input, .form-container select, .form-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: Montserrat;
+}
+.form-container button {
+    background-color: #5e239d;
+    color: white;
+    cursor: pointer;
+}
+#about p {
+    font-size: 18px;
+}
+#about {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.section h3 {
+    font-size: 2.5em;
+    color: #5e239d;
+    margin-bottom: 20px;
+}
+.services, .advantages, .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service, .advantage, .review {
+    background: white;
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.service img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+    height: 220px;
+}
+.service h4, .service p {
+    padding: 0 20px;
+}
+.service h4 {
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+.service p {
+    font-size: 18px;
+}
+#services {
+    padding: 50px 0;
+}
+.service button {
+    width: 200px;
+    height: 50px;
+    background: #5e239d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-family: Montserrat;
+    margin: 20px 0 20px 20px;
+    font-weight: 600;
+}
+.review span {
+    display: block;
+    margin-top: 10px;
+    color: #666;
+    font-style: italic;
+}
+footer {
+    background-color: #5e239d;
+    color: white;
+    padding: 20px 10%;
+    text-align: center;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f3f3f3;
+    text-align: center;
+}
+
+.numbers {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #6a11cb, #8d1dc5);
+    color: white;
+}
+
+.numbers h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.numbers-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.number-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px 30px;
+    border-radius: 16px;
+    min-width: 220px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.number-item:hover {
+    transform: translateY(-5px);
+}
+
+.num {
+    font-size: 42px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.numbers p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.num-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.num-item p {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.partners {
+    padding: 60px 20px;
+    background: white;
+    color: #333;
+}
+
+.partners h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.partners-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.partner-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.partner-item:hover {
+    transform: scale(1.1);
+}
+
+.partner-item img {
+    max-width: 150px;
+    height: auto;
+}
+
+.advantages {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #6a11cb, #821ecf);
+    color: white;
+    text-align: center;
+}
+
+.advantages h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.advantages-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.advantage-item {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 320px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.advantage-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.advantage-item:hover .icon-wrapper {
+    background: white;
+    transform: scale(1.1);
+}
+
+.icon-wrapper i {
+    font-size: 32px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.advantage-item:hover i {
+    color: #6a11cb;
+}
+
+.advantages h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.advantages p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+.reviews {
+    padding: 70px 20px;
+    background: #fff;
+    text-align: center;
+}
+.reviews h2 {
+    font-size: 32px;
+    color: #6a0dad;
+    margin-bottom: 30px;
+}
+.swiper {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+.swiper-slide {
+    background: #f9f9f9;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-left: 5px solid #6a0dad;
+}
+.review-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6a0dad;
+    margin-bottom: 5px;
+}
+.review-date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+.review-text {
+    font-size: 16px;
+    color: #333;
+}
+.stars {
+    color: gold;
+    margin-top: 10px;
+}
+.swiper-pagination {
+    margin-top: 15px;
+}
+.swiper-button-prev, .swiper-button-next {
+    color: #6a0dad;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: #5e239d;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #5e239d !important;
+}
+
+.banner {
+    background: linear-gradient(135deg, #6a11cb, #821ecf) no-repeat center center/cover;
+    padding: 40px;
+    color: white;
+}
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.banner-text h2 {
+    font-size: 28px;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+.banner-text p {
+    font-size: 16px;
+    margin: 0 0 20px;
+    opacity: 0.9;
+}
+.banner .btn {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 12px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.banner .btn:hover {
+    background: #ddd;
+}
+/* Общие стили секции */
+.contact-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Контейнер для блока контактов и формы */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+/* Блок с контактами */
+.contact-info {
+    flex: 1;
+    min-width: 320px;
+    padding: 20px;
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.contact-info a {
+    color: #6A5ACD;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Социальные иконки */
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #6A5ACD;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    background: #5a49c1;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Блок формы */
+.contact-form {
+    flex: 1;
+    min-width: 320px;
+    padding: 20px;
+    background: #f8f9fd;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Форма */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus {
+    border-color: #6A5ACD;
+    outline: none;
+    box-shadow: 0 0 8px rgba(106, 90, 205, 0.3);
+}
+
+/* Кнопка */
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #6A5ACD;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #5a49c1;
+    transform: translateY(-2px);
+}
+
+/* Карта */
+.map-container {
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+}
+
+#language-switcher {
+    padding: 8px 12px;
+    border: 2px solid #6a0dad;
+    border-radius: 20px;
+    background: #fff;
+    color: #6a0dad;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#language-switcher:hover {
+    background: #6a0dad;
+    color: #fff;
+}
+
+#language-switcher:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(106, 13, 173, 0.5);
+}
+
+@media (max-width: 720px) {
+    nav {
+        display: none;
+    }
+    .number-item {
+        width: 100%;
+    }
+    .service, .advantage, .review {
+        flex-basis: 100%;
+    }
+    .banner-content {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .banner img {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}
